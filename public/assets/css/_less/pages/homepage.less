@@ -12,33 +12,38 @@ html {
 
 .content {
     position: absolute;
-    top: 25px;
-    left: 20%;
+    top: 0;
+    left: 15%;
+    margin: 25px 0;
     background: white;
     border-radius: 5px;
     padding: 15px 15px;
     text-align: center;
-    max-width: 600px;
+    width: 60%;
+    max-width: 450px;
 
-    img {
+    .logo {
         width: 100%
         margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
     }
 
     .btn {
-        .font-size-rems(100);
+        .font-size-rems(85);
         font-family: 'Arial', sans-serif;
         font-weight: 600;
         border: 6px solid @red;
         color: @red;
         background: white;
-        .transition(background .25 linear, border .25 linear);
+        .transition(background .25 linear, color .25 linear);
         text-decoration: none;
 
         &:hover {
             background: @red;
             color: white;
-            border-color: white;
         }
     }
 
@@ -63,5 +68,11 @@ html {
 
 .share-buttons li{
     display: inline;
-    .font-size-rems(24);
+    .font-size-rems(18);
+}
+
+.credits {
+    text-decoration: none;
+    .font-size-rems(10);
+    margin: 25px 0 0 0;
 }
